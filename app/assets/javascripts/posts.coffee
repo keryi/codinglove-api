@@ -13,13 +13,12 @@ $(document).on 'ready page:load', ->
         # b - bottom
         current_post = $('.post').length
 
-      return if current_post < 1 || current_post > $('.post').length
       if (e.which is 74)
         # j - down
-        current_post += 1
+        current_post += 1 if current_post < $('.post').length
       else if (e.which is 75)
         # k - up
-        current_post -= 1
+        current_post -= 1 if current_post > 1
       else
         # don't care
     else

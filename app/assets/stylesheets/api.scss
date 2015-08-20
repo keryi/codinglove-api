@@ -1,0 +1,26 @@
+.api-docs {
+  background-color: #e9eaed;
+  min-height: 100vh;
+
+  h1 {
+    text-align: center;
+    color: red;
+  }
+
+  .api-desc {
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 15px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+    h3, {
+      margin-bottom: 20px;
+    }
+
+    .api-desc-res {
+      margin-top: 30px;
+    }
+  }
+}

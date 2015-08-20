@@ -3,5 +3,7 @@ Rails.application.routes.draw do
     resources :posts, only: :show
   end
 
+  resources :apis, only: :index
+
   root 'posts#index'
 end
