@@ -29,3 +29,9 @@ $(document).on 'ready page:load', ->
       scrollTop: to_post.offsetTop - 50, 600
     $('.post.active').removeClass('active')
     $(to_post).addClass('active')
+
+  $(window).scroll ->
+    offset_top = $(window).scrollTop()
+
+    if offset_top >= $('.post')[$('.post').length - 5].offsetTop
+      $('.pagination a').click()
