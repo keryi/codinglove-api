@@ -1,0 +1,9 @@
+$("<%=j render(:partial => 'posts', :object => @posts) %>")
+  .appendTo($(".posts-listing"));
+
+<% if @posts.last_page? %>
+  $('.pagination').html("That's all, folks!");
+<% else %>
+  $('.pagination')
+    .html("<%=j link_to_next_page(@posts, 'Moar Please', remote: true, class: 'btn btn-red-cl') %>");
+<% end %>

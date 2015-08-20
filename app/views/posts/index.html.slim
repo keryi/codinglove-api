@@ -1,0 +1,9 @@
+.container-fluid
+  .row.posts
+    .col-xs-12.col-sm-4.col-sm-offset-4
+      h1 Coding Love
+      p clone with love
+      .posts-listing
+        = render partial: 'posts', object: @posts
+      .pagination
+        = link_to_next_page(@posts, 'Moar Please', remote: true, class: 'btn btn-red-cl')

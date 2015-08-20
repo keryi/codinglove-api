@@ -1,0 +1,33 @@
+.posts {
+  text-align: center;
+  background-color: rgb(233, 234, 237);
+
+  h1 {
+    color: red;
+  }
+
+  .posts-listing {
+    margin-top: 25px;
+
+    .post {
+      padding: 30px;
+      background-color: #fff;
+      margin-bottom: 15px;
+      border: 1px solid;
+      border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+      border-radius: 3px;
+
+      .post-desc {
+        font-size: 20px;
+      }
+
+      &.active {
+        border: 2px solid red;
+      }
+    }
+
+    .pagination {
+      font-size: 20px;
+    }
+  }
+}

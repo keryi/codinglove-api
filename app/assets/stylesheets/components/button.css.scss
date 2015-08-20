@@ -1,0 +1,11 @@
+.btn-red-cl {
+  border-radius: 3px;
+  color: red;
+  background-color: transparent;
+  border: 2px solid red;
+
+  &:hover {
+    background-color: #FF5252;
+    color: #fff;
+  }
+}
