@@ -4,8 +4,7 @@ namespace :scrap do
   desc 'scape thecodinglove.com'
   task :codinglove do
     # must limit to once
-    cl = Scraper::CodingLove.new
-
+    cl = Scraper::CodingLove.instance
     begin
       cl.scrap
     rescue SystemExit, Interrupt
