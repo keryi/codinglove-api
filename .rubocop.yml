@@ -1,0 +1,31 @@
+AllCops:
+  RunRailsCops: true
+  Exclude:
+    - bin/**/*
+    - config/**/*
+    - db/**/*
+    - log/**/*
+    - public/**/*
+    - spec/rails_helper.rb
+    - spec/spec_helper.rb
+    - tmp/**/*
+    - vendor/**/*
+    - .gems/**/*
+
+Documentation:
+  Enabled: false
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/GuardClause:
+  Enabled: false
+
+Style/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 154
+
+Metrics/MethodLength:
+  Max: 15
