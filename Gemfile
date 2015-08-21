@@ -16,6 +16,7 @@ gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'jquery-infinite-pages'
 gem 'responders'
+gem 'acts-as-taggable-on', '~> 3.4'
 
 group :development, :test do
   gem 'byebug'
