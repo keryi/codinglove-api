@@ -187,6 +187,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
+    seed_dump (3.2.2)
+      activerecord (~> 4)
+      activesupport (~> 4)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
     slim (3.0.6)
@@ -250,6 +253,7 @@ DEPENDENCIES
   rspec-rails
   rubocop
   sass-rails (~> 5.0)
+  seed_dump
   shoulda-matchers
   slim-rails
   spring

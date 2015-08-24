@@ -19,6 +19,7 @@ gem 'responders'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'httparty', require: false
 gem 'imagga'
+gem 'seed_dump'
 
 group :development do
   gem 'dotenv-rails'
