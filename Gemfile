@@ -17,6 +17,12 @@ gem 'bootstrap-sass'
 gem 'jquery-infinite-pages'
 gem 'responders'
 gem 'acts-as-taggable-on', '~> 3.4'
+gem 'httparty', require: false
+gem 'imagga'
+
+group :development do
+  gem 'dotenv-rails'
+end
 
 group :development, :test do
   gem 'byebug'

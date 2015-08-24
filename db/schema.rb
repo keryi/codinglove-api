@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150821031939) do
+ActiveRecord::Schema.define(version: 20150821081313) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "imagga_tags", force: :cascade do |t|
+    t.string   "confidence"
+    t.string   "name"
+    t.integer  "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "imagga_tags", ["post_id"], name: "index_imagga_tags_on_post_id", using: :btree
 
   create_table "posts", force: :cascade do |t|
     t.text     "desc"
@@ -48,4 +58,5 @@ ActiveRecord::Schema.define(version: 20150821031939) do
 
   add_index "tags", ["name"], name: "index_tags_on_name", unique: true, using: :btree
 
+  add_foreign_key "imagga_tags", "posts"
 end
